@@ -10,6 +10,12 @@
   };
 
   programs = {
+    gh.enable = true;
+    git = {
+      enable = true;
+      userName = "brauni@desk";
+      userEmail = "braunnicolaj@gmail.com";
+    };
 	nushell = { enable = true;
       # The config.nu can be anywhere you want if you like to edit your Nushell with Nu
       configFile.source = /var/home/brauni/.config/nushell/config.nu;
@@ -41,8 +47,8 @@
        )
        '';
 		shellAliases = {
-       		vi = "hx";
-       		vim = "hx";
+		vi = "hx";
+		vim = "hx";
        };
    };  
    carapace.enable = true;
@@ -57,6 +63,7 @@
        };
     };
   };
+  nh.enable = true;
 };
   # The home.packages option allows you to install Nix packages into your
   # environment.
@@ -65,7 +72,6 @@
     ncdu
     btop
     vlc
-    nh
     bc
     jq
     eza
