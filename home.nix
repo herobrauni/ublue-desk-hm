@@ -58,13 +58,13 @@
 
     starship = {
       enable = true;
-      settings = {
-        add_newline = true;
-        character = {
-          success_symbol = "[➜](bold green)";
-          error_symbol = "[➜](bold red)";
-        };
-      };
+#      settings = {
+#        add_newline = true;
+#        character = {
+#          success_symbol = "[➜](bold green)";
+#          error_symbol = "[➜](bold red)";
+#        };
+#      };
     };
 
     nh.enable = true;
@@ -116,6 +116,8 @@
     # # the Nix store. Activating the configuration will then make '~/.screenrc' a
     # # symlink to the Nix store copy.
     # ".screenrc".source = dotfiles/screenrc;
+    
+    ".config/.starship.toml".source = ./dotfiles/starship.toml;
 
     # # You can also set the file content immediately.
     # ".gradle/gradle.properties".text = ''
