@@ -32,8 +32,6 @@
         # > Our main home-manager configuration file <
         modules = [
           ./home.nix
-          ./plasma.nix
-          ./nix-index.nix
         ];
       };
     };
