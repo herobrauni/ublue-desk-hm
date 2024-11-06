@@ -20,6 +20,11 @@
       userEmail = "braunnicolaj@gmail.com";
     };
 
+    thefuck = {
+      enable = true;
+      enableNushellIntegration = true;
+    };
+
     nushell = {
       enable = true;
       configFile.source = ./dotfiles/nushell/config.nu;

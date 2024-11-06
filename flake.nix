@@ -33,6 +33,7 @@
         modules = [
           ./home.nix
           ./plasma.nix
+          ./nix-index.nix
         ];
       };
     };
